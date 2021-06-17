@@ -2,79 +2,100 @@
 body{
     margin: 0;
     text-align: center;
+    z-index: -100;
 }
 
 
 .citizen_logo {
     position: fixed;
-    width: 5%;
+    width: 4%; 
     border-radius: 50%;
-    top: 7%;
+    top: 5%;
     left: 3%;
-   
+    z-index: 10;
      
 }
 
 .navbar{
-    z-index: 2;
-    text-align: right;
-    width: 80%;
-    margin-left: 20%;
-    top: 2em;
-    position: absolute;
+    z-index: 5;
     
+    width: 100%;
+    padding: 0rem;
+    margin: 0rem;
+    top: 5%;
+    position: absolute;
+   
 
+}
+.ullinks{
+    margin: 0rem;
+    padding: 0rem;
+    
+    text-align: right;
 }
 .navbar li {
     
     display: inline;
-    margin: 3rem;
-    
- 
 }
 
 #navlinks{
-    color :#ffffff;
+    color :#c9c9c9;
     text-decoration: none;
-    font-size: 150%;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
     font-family: 'Caveat', cursive;
+    padding:0;
+    margin:  3rem;
+    margin: top bottom 0rem; 
     
-  
 }
 :hover#navlinks{
-    color:  #e4e4e4;
-
+    color:  #ffffff;
 }
 
-
-.slides{
+.video{
     
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(75, 110, 96);
+   
+    width: 100%; 
     height: min-content;
-    width: 100%;
+
     
 }
 
 .slide1 {   
-    width: 100%;  
+    width: 100%;
      
-    opacity: 20%;  
-    z-index: 1;
-    
-    margin-bottom: -.25em;
+    opacity: 50%;  
+   
 }
 
+.midcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.qoute{
+    
+    position: absolute;
+    z-index: 99;
+    
+}
 
-
-
+.words{
+    font-size: 250%;
+    color: rgb(209, 209, 209);
+    z-index: 100;
+}
 .img1{
     width: 90%;
     padding-top:2rem;
 }
 
-.emptydiv1{
+/* .emptydiv1{
     width: 100%;
     height: 2rem;
     background-color: white;
     ;
-}
+} */
