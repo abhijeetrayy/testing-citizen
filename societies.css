@@ -145,8 +145,8 @@
     .topcontent h1{
         z-index: 1;
         color: rgb(255, 255, 255);
-        font-size: 7vmax;
-        letter-spacing: 13px;
+        font-size: 8vmax;
+        letter-spacing: 12px;
     }
     .topcontent h2{
         z-index: 1;
