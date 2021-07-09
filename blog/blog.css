@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    text-align: center;
+    background-color: aliceblue;
+}
+.video{
+   
+   background-color: rgb(0, 0, 0);
+   width: 100%;
+   height: min-content;
+}
+.backimg{
+    
+    
+    width: 100%;
+   
+    z-index: 500;
+    opacity: 50%;
+}
+
+
+
+.citizen_logo {
+    position: fixed;
+    width: 4vmax; 
+    border-radius: 50%;
+    top: 5%;
+    left: 3%;
+    z-index: 10;
+     
+}
+
+.navbar{
+    z-index: 5;
+    
+    width: 100%;
+    padding: 0rem;
+    margin: 0rem;
+    top: 5%;
+    position: absolute;
+   
+
+}
+.ullinks{
+    margin: 0rem;
+    padding: 0rem;
+    
+    text-align: right;
+}
+.navbar li {
+    
+    display: inline;
+}
+
+#navlinks{
+    color :#c9c9c9;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    font-family:'Poppins', sans-serif;
+  
+    margin:  5rem;
+   
+    
+}
+:hover#navlinks{
+    color:  #ffffff;
+}
+
+.linkgoogle{
+    position: absolute;
+    
+    top: 0;
+}

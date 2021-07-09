@@ -1,0 +1,160 @@
+
+* {
+    box-sizing: border-box; margin:0; padding: 0; 
+    text-align: center;
+  }
+main{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+
+    
+    grid-template-rows: repeat(3, 5vh 7 0vh 10vh) ;
+    color: white;
+   
+   
+    
+}
+
+.toptup{
+    
+    
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: auot;
+   
+}
+.midway{
+    display: grid;
+    
+    
+  
+    
+    place-items:center;
+    z-index: 1;
+    
+    
+    width: 100%;
+}
+
+.containtone{
+    position: absolute;
+    width: 70vw;
+    
+     
+    
+}
+
+.aboutreq{
+    font-size: 3vmin;
+    color: white;
+    z-index: 100;
+    line-height: 4vmin;
+}
+.bottom{
+    
+    
+    
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    
+    
+}
+
+
+
+/* 
+ */
+
+.citizen_logo {
+   position: relative;
+    width: 12%; 
+    border-radius: 50%;
+    top: 5%;
+    left: 3%;
+    z-index: 10;
+    opacity: 100%;
+    display: grid;
+    align-items: left;
+}
+/* :hover.citizen_logo{
+    opacity: 70%;
+    background-color: rgb(223, 236, 37);
+} */
+
+.navbar{
+    z-index: 5;
+    display: grid;
+    align-items: center;
+    justify-content: right;
+
+}
+.ullinks{
+    
+    
+    text-align: right;
+}
+.navbar li {
+    
+    display: inline;
+}
+
+#navlinks{
+    color :#757575;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    font-family:'Poppins', sans-serif;
+    
+    margin:  5rem;
+      
+    
+}
+:hover#navlinks{
+    color:  #000000;
+}
+
+.random{
+    
+    width: 100vw;
+
+    object-fit: cover;
+    opacity: 30%;
+     
+    
+}
+.bottom{
+
+    display: grid;
+    grid-template-rows: 1fr 1fr ;
+}
+.tip{
+    display: grid;
+    align-items: center;
+    justify-content: left;
+}
+
+.ids{
+    align-items: center;
+    justify-content: center;
+    column-gap: 1vmax;
+    
+    
+}
+
+.insta{
+    text-decoration: none;
+    color: black;
+    background-color: rgb(221, 221, 221);
+    border-radius: 15%;
+}
+.email{
+    text-decoration: none;
+    color: black;
+    background-color: rgb(221, 221, 221);
+    border-radius: 15%;
+}
+.tiplog{
+    font-size: 2vmax;
+}
