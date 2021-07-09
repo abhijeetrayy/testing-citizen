@@ -7,12 +7,7 @@
 
 }
 
-main {
-    display: grid;
-    grid-template-rows: 1fr;
-    
 
-}
 
 .logo {
     z-index: 10000;
@@ -293,10 +288,19 @@ main {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat (1fr);
 
-    width: 100%;
+    
 
-    margin: 1vh auto 0 auto;
+   
 
+}
+.outcom h2 {
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 2px;
+    
+}
+.outcom p{
+    font-size: 20px;
+    padding: 3em 0 0 0 ;
 }
 .dot10 {
     grid-column: 1/ -1;
@@ -314,17 +318,18 @@ main {
 
 
 .outcom .dot7, .dot1, .dot2, .dot3, .dot4, .dot5, .dot6 {
+    
     text-align: center;
-    border: solid 1vw white;
     color: rgb(0, 0, 0);
-
+    margin: 3rem;
+    
 }
 
 .footer{
     grid-column: 1/ -1;
     display: grid;
     
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr 4fr;
     width: 100%;
     border: solid 0px white;
     background-color: black;
@@ -339,25 +344,21 @@ main {
     cursor: pointer;
     
     /* background-image: linear-gradient(to right, rgb(233, 166, 166), rgb(117, 108, 240)); */
-    border-radius: 50px;
+   
     font-size: .8em;
 
 
 }
 .footer p{
     
-    display: inline;
+    display: inline-block;
+    padding: 16px;
     
 }
 .insta{
     margin: auto;
 }
-.outcom p {
-    width: 80%;
-    margin: auto;
-    padding:1rem;
-    font-size: 19px;
-}
+
 
 .enginepng {
     width: 7vmin;
@@ -394,7 +395,7 @@ main {
         width: 100%;
         height: 70vh;
         object-fit: cover;
-        opacity: 70%;
+       
     
     }
 
@@ -467,14 +468,15 @@ main {
         margin: 10px;
     }
     .outcom p{
-        font-size: 18px;
+        font-size: 17px;
+        padding: 2rem 0;
     }
     .outcom h3{
         font-size: 25px;
     }
     .footer p{
         
-        display: inline-block;
+        display: block;
         
     }
     .insta{
@@ -482,5 +484,13 @@ main {
     }
     .footer a{
         font-size: .65em;
+    }
+    .outcom .dot7, .dot1, .dot2, .dot3, .dot4, .dot5, .dot6 {
+        border-bottom: 1px black solid;
+    
+    }
+    .tagc h1{
+        text-align: left;
+        font-size: 18px;
     }
 }

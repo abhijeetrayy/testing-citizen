@@ -64,6 +64,9 @@
 .cell h1{
     margin: 1rem;
 }
+.cell p{
+    font-size: 20px;
+}
 .cell3{
     grid-column: 1/ -1;
     margin: 5rem;
@@ -167,9 +170,13 @@
     }
     .footer p{
         
-        display: inline-block;
+        display: block;
         padding: 16px;
         font-size: 1em;
     
+    }
+    .tagg h1{
+        text-align: left;
+        font-size: 18px;
     }
 }

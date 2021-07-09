@@ -81,9 +81,16 @@
     grid-template-columns: 1fr 1fr;
 
 }
+.outcom h2 {
+    font-family: 'Nunito', sans-serif;
+    
+    
+    
+}
+
 h7{
     font-size: 20px;
-    line-height: 1.5em;
+    line-height: 1.2em;
     
 }
 .dot10 {
@@ -102,9 +109,10 @@ h7{
 }
 
 
-.outcom .dot1, .dot2 ,.dot3 ,.dot4 ,.dot5 ,.dot6{
-    margin: 2em;
+.dot1, .dot2 ,.dot3 ,.dot4 ,.dot5 ,.dot6{
+    margin: 2em 2em 4em 2em;
 }
+
 
 .dot1{
     grid-column: 1/ -1;
@@ -133,6 +141,29 @@ h7{
     object-fit: cover;
     margin-top: 3vh;
 }
+.dot2 h2{
+    margin-bottom: 2em;
+    letter-spacing: 10px;
+}
+.hfor{
+    margin-bottom: 2em;
+    letter-spacing: 10px;
+}
+.dot4 h2{
+    margin-bottom: 2em;
+    letter-spacing: 10px;
+}
+.dot5 h2{
+    margin-bottom: 2em;
+    letter-spacing: 10px;
+}
+.dot6 h2{
+    margin-bottom: 2em;
+    letter-spacing: 10px;
+}
+.dot7 h2{
+    margin-bottom: 2em;
+}
 .dot3{
     grid-column: 1/ -1;
     
@@ -144,6 +175,7 @@ h7{
     font-family: 'ABeeZee', sans-serif;
     letter-spacing: 8px;
     font-size: 2rem;
+    
 }
 
 .cell img{
@@ -161,7 +193,7 @@ h7{
     grid-column: 1/ -1;
     display: grid;
     
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr 4fr;
     width: 100%;
     border:none;
     background-color: black;
@@ -205,10 +237,7 @@ h7{
     margin: 10px;
 }
 
-.outcom h1 {
-    margin: 0 0 1em 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
+
 
 
 
@@ -292,9 +321,8 @@ h7{
         grid-template-columns: 1fr;
         
     
-        width: 100%;
-    
-        margin: 1vh auto 0 auto;
+        
+        
         /* background-image: linear-gradient(to right, rgb(152, 129, 196), rgb(61, 138, 189)); */
     
     }
@@ -325,7 +353,7 @@ h7{
         
     }
     .cell img{
-        width: 90%;
+        width: 95%;
         height: 25vmax;
         object-fit: cover;
     }
@@ -351,8 +379,18 @@ h7{
         width: 100%;
     }
     h7{
-        font-size: 16px;
+        font-size: 17px;
         line-height: 1.5em;
         
+    }
+    .outcom p {
+        width: 95%;
+        margin: auto;
+        padding:1rem;
+        font-size: 19px;
+    }
+    .tag h1{
+        text-align: left;
+        font-size: 18px;
     }
 }
