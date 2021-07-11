@@ -9,16 +9,64 @@
 
 
 
-.logo {
-    z-index: 10000;
-    border-radius: 50%;
+.totalnav {
+    display: grid;
     position: absolute;
-    width: 5vw;
-    
-    top: 2%;
-    left: 2%;
+    grid-template-columns: 1fr 2fr;
+    width: 100%;
 }
 
+/* .logo{
+    position: fi;
+    top: 3vmin;
+} */
+.citizen_logo {
+    position: relative;
+    width: 5vw;
+    border-radius: 50%;
+    margin-top: 5%;
+    left: 3%;
+    z-index: 10;
+    opacity: 100%;
+    display: grid;
+    place-content: left;
+}
+
+/* :hover.citizen_logo{
+     opacity: 70%;
+     background-color: rgb(223, 236, 37);
+ } */
+
+.navbar {
+    z-index: 5;
+
+    display: grid;
+    align-items: center;
+    justify-content: right;
+
+
+
+}
+
+
+
+#navlinks {
+    color: #bbbbbb;
+    text-decoration: none;
+    list-style: none;
+    font-size: 20px;
+    line-height: 1.5;
+
+    font-family: 'Poppins', sans-serif;
+    padding: 1rem;
+
+
+
+}
+
+:hover#navlinks {
+    color: #ffffff;
+}
 .topc {
     height: 50vh;
     width: 100%;
@@ -243,10 +291,19 @@ h7{
 
 
 @media (max-width: 700px) {
-    .logo {
-        width: 10vw;
+    .citizen_logo{
+        width: 15vw;
     }
-
+    
+    #navlinks{
+        font-size: 4vw;
+    }
+    .totalnav{
+        display: grid;
+        position: absolute;
+        grid-template-columns: 1fr 4fr;
+        width: 100%;
+    }
     .topc {
         height: 70vh;
         width: 100%;

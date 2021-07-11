@@ -1,22 +1,69 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.navbar{
-    background-color: red;
-    position: absolute;
+
+.totalnav {
     display: grid;
-    z-index: 1000;
-}
-.logo img{
     position: absolute;
-    border-radius: 50%;
-    width: 4vmax;
-    top: 1rem;
-    left: 1rem;
+    grid-template-columns: 1fr 2fr;
+    width: 100%;
 }
-.topcontent{
+
+/* .logo{
+    position: fi;
+    top: 3vmin;
+} */
+.citizen_logo {
+    position: relative;
+    width: 5vw;
+    border-radius: 50%;
+    margin-top: 5%;
+    left: 3%;
+    z-index: 10;
+    opacity: 100%;
+    display: grid;
+    place-content: left;
+}
+
+/* :hover.citizen_logo{
+     opacity: 70%;
+     background-color: rgb(223, 236, 37);
+ } */
+
+.navbar {
+    z-index: 5;
+
+    display: grid;
+    align-items: center;
+    justify-content: right;
+
+
+
+}
+
+
+
+#navlinks {
+    color: #ffffff;
+    text-decoration: none;
+    list-style: none;
+    font-size: 20px;
+    line-height: 1.5;
+
+    font-family: 'Poppins', sans-serif;
+    padding: 1rem;
+
+
+
+}
+
+:hover#navlinks {
+    color: #8d8d8d;
+}
+
+.topcontent {
     height: 70vh;
     width: 100%;
     display: grid;
@@ -26,157 +73,195 @@
     position: relative;
     text-align: center;
 }
-.topcontent h1{
+
+.topcontent h1 {
     z-index: 1;
     color: rgb(255, 255, 255);
     font-size: 15vmin;
-    letter-spacing: 15px;
+    letter-spacing: 12px;
 }
-.topcontent h2{
+
+.topcontent h2 {
     z-index: 1;
     color: rgb(255, 255, 255);
     letter-spacing: 2px;
     font-size: 3vmin;
-    
+
 }
-.top{
+
+.top {
     width: 100%;
     position: absolute;
     height: 70vh;
     object-fit: cover;
 }
 
-.midcontent{
+.midcontent {
     display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: center;
     place-items: center;
 
-    
+
 }
-.cell{
+
+.cell {
     margin: 4rem;
     width: 30vw;
 }
-.cell img{
+
+.cell img {
     width: 80px;
 }
-.cell h1{
+
+.cell h1 {
     margin: 1rem;
 }
-.cell p{
+
+.cell p {
     font-size: 20px;
 }
-.cell3{
+
+.cell3 {
     grid-column: 1/ -1;
     margin: 5rem;
 }
-.cell button{
+
+.cell button {
     margin: 2rem;
     border-radius: 35px;
     padding: .5em;
     border: none;
     background-color: black;
 }
-.cell a{
+
+.cell a {
     text-decoration: none;
     font-size: 16px;
     color: white;
     letter-spacing: 3px;
     padding: 1em;
-    
-    
+
+
 }
-:hover.cell button{
+
+:hover.cell button {
     background-color: rgb(20, 111, 216);
 }
-.footer{
+
+.footer {
     text-align: center;
     display: grid;
-    
+
     grid-template-rows: 1fr 4fr;
     width: 100%;
-    border:none;
+    border: none;
     background-color: black;
     color: white;
 
 }
-.tagg h1{
+
+.tagg h1 {
     text-align: left;
 }
-.footer a{
+
+.footer a {
     color: white;
     text-decoration: none;
-   
-    
+
+
     cursor: pointer;
-    
-   
-    
+
+
+
     font-size: .85em;
 
 
 }
-.footer p{
-    
+
+.footer p {
+
     display: inline-block;
     padding: 16px;
     font-size: 1em;
 
 }
-.insta{
+
+.insta {
     margin: auto;
 }
 
-@media (max-width: 700px){
-    .midcontent{
+@media (max-width: 700px) {
+    .citizen_logo{
+        width: 15vw;
+    }
+    
+    #navlinks{
+        font-size: 4vw;
+    }
+    .totalnav{
+        display: grid;
+        position: absolute;
+        grid-template-columns: 1fr 4fr;
+        width: 100%;
+    }
+    .midcontent {
         display: grid;
         grid-template-columns: 1fr;
         text-align: center;
         place-items: center;
-    
-        
+
+
     }
-    .cell{
+
+    .cell {
         margin: 1rem;
-        width: 90%;
+        width: 85%;
         border-bottom: 1px solid black;
     }
-    .topcontent h1{
+
+    .topcontent h1 {
         z-index: 1;
         color: rgb(255, 255, 255);
         font-size: 8vmax;
-        letter-spacing: 12px;
+        letter-spacing: 8   px;
     }
-    .topcontent h2{
+
+    .topcontent h2 {
         z-index: 1;
         color: rgb(255, 255, 255);
         letter-spacing: 2px;
         font-size: 3vmax;
-        
+
     }
-    .footer a{
+
+    .footer a {
         color: white;
         text-decoration: none;
-       
-        
+
+
         cursor: pointer;
-        
-       
-        
+
+
+
         font-size: .7em;
-    
-    
+
+
     }
-    .footer p{
-        
+
+    .footer p {
+
         display: block;
         padding: 16px;
         font-size: 1em;
-    
+
     }
-    .tagg h1{
+
+    .tagg h1 {
         text-align: left;
         font-size: 18px;
+    }
+    .cell p{
+        font-size:17px;
     }
 }

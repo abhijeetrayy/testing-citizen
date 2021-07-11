@@ -9,14 +9,64 @@
 
 
 
-.logo {
-    z-index: 10000;
-    border-radius: 50%;
+.totalnav {
+    display: grid;
     position: absolute;
-    width: 5vw;
+    grid-template-columns: 1fr 2fr;
+    width: 100%;
+}
 
-    top: 2%;
-    left: 2%;
+/* .logo{
+    position: fi;
+    top: 3vmin;
+} */
+.citizen_logo {
+    position: relative;
+    width: 5vw;
+    border-radius: 50%;
+    margin-top: 5%;
+    left: 3%;
+    z-index: 10;
+    opacity: 100%;
+    display: grid;
+    place-content: left;
+    cursor: pointer;
+}
+
+/* :hover.citizen_logo{
+     opacity: 70%;
+     background-color: rgb(223, 236, 37);
+ } */
+
+.navbar {
+    z-index: 5;
+
+    display: grid;
+    align-items: center;
+    justify-content: right;
+
+
+
+}
+
+
+
+#navlinks {
+    color: #d1d1d1;
+    text-decoration: none;
+    list-style: none;
+    font-size: 20px;
+    line-height: 1.5;
+
+    font-family: 'Poppins', sans-serif;
+    padding: 1rem;
+    cursor: pointer;
+
+
+}
+
+:hover#navlinks {
+    color: #ffffff;
 }
 
 .topc {
@@ -24,11 +74,12 @@
     width: 100%;
     display: grid;
     background-color: white;
+    place-items: center;
 
 
 }
 
-.topc img{
+.topc img {
     cursor: pointer;
     z-index: 110;
 }
@@ -38,7 +89,7 @@
     width: 100%;
     height: 50vh;
     object-fit: cover;
-    
+
 
 }
 
@@ -288,47 +339,58 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat (1fr);
 
-    
 
-   
+
+
 
 }
+
 .outcom h2 {
     font-family: 'Nunito', sans-serif;
     letter-spacing: 2px;
-    
+
 }
-.outcom p{
+
+.outcom p {
     font-size: 20px;
-    padding: 3em 0 0 0 ;
+    padding: 3em 0 0 0;
 }
+
 .dot10 {
     grid-column: 1/ -1;
     text-align: center;
-    
+
     border: solid rgb(255, 255, 255) 1vw;
 }
-.dot10 h3{
+
+.dot10 h3 {
     font-size: 2em;
 }
+
 .dot7 {
 
     grid-column: 1/ -1;
 }
 
 
-.outcom .dot7, .dot1, .dot2, .dot3, .dot4, .dot5, .dot6 {
-    
+.outcom .dot7,
+.dot1,
+.dot2,
+.dot3,
+.dot4,
+.dot5,
+.dot6 {
+
     text-align: center;
     color: rgb(0, 0, 0);
     margin: 3rem;
-    
+
 }
 
-.footer{
+.footer {
     grid-column: 1/ -1;
     display: grid;
-    
+
     grid-template-rows: 1fr 4fr;
     width: 100%;
     border: solid 0px white;
@@ -336,26 +398,29 @@
     color: white;
 
 }
-.footer a{
+
+.footer a {
     color: white;
     text-decoration: none;
-   
-    
+
+
     cursor: pointer;
-    
+
     /* background-image: linear-gradient(to right, rgb(233, 166, 166), rgb(117, 108, 240)); */
-   
+
     font-size: .8em;
 
 
 }
-.footer p{
-    
+
+.footer p {
+
     display: inline-block;
     padding: 16px;
-    
+
 }
-.insta{
+
+.insta {
     margin: auto;
 }
 
@@ -375,28 +440,37 @@
 
 
 @media (max-width: 700px) {
-    .logo {
-        width: 10vw;
+    .citizen_logo{
+        width: 15vw;
     }
-
+    
+    #navlinks{
+        font-size: 4vw;
+    }
+    .totalnav{
+        display: grid;
+        position: absolute;
+        grid-template-columns: 1fr 4fr;
+        width: 100%;
+    }
     .topc {
         height: 70vh;
         width: 100%;
-        
+
         background-color: white;
-    
-    
+
+
     }
-    
-    
-    
+
+
+
     .vidmain {
         position: absolute;
         width: 100%;
         height: 70vh;
         object-fit: cover;
-       
-    
+
+
     }
 
     .words {
@@ -411,7 +485,7 @@
 
     }
 
-    
+
 
     .banner1,
     .banner2,
@@ -448,48 +522,71 @@
         line-height: 18px;
         margin-top: 18px;
     }
+
     .outcom {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat (1fr);
-    
+
         width: 100%;
-    
+
         margin: 1vh auto 0 auto;
-    
+
     }
-    .outcom .dot1 ,.dot2 ,.dot3 ,.dot4 ,.dot5 ,.dot6 ,.dot8 ,.dot7{
+
+    .outcom .dot1,
+    .dot2,
+    .dot3,
+    .dot4,
+    .dot5,
+    .dot6,
+    .dot8,
+    .dot7 {
         border-bottom: 1px solid black;
         margin: 2em;
     }
+
     .enginepng {
         width: 9vmin;
-    
+
         margin: 10px;
     }
-    .outcom p{
+
+    .outcom p {
         font-size: 17px;
         padding: 2rem 0;
     }
-    .outcom h3{
+
+    .outcom h3 {
         font-size: 25px;
     }
-    .footer p{
-        
+
+    .footer p {
+
         display: block;
-        
+
     }
-    .insta{
+
+    .insta {
         text-align: center;
     }
-    .footer a{
+
+    .footer a {
         font-size: .65em;
     }
-    .outcom .dot7, .dot1, .dot2, .dot3, .dot4, .dot5, .dot6 {
+
+    .outcom .dot7,
+    .dot1,
+    .dot2,
+    .dot3,
+    .dot4,
+    .dot5,
+    .dot6 {
         border-bottom: 1px black solid;
-    
+
     }
-    .tagc h1{
+
+    .tagc h1 {
         text-align: left;
         font-size: 18px;
     }
