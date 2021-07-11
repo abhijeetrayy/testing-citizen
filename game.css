@@ -435,8 +435,35 @@
     margin: 0 0 1em 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+.teamup{
+    text-align: center;
+    border-top: solid 2px black;
+    margin: 3em;
+}
+.teamup h2{
+    margin-top: 2em;
+}
+.teamup button {
+    margin: 2rem;
+    border-radius: 35px;
+    padding: .5em;
+    border: 1px black solid;
+    background-color: black;
+}
+
+.teamup a {
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(20, 111, 216);
+    letter-spacing: 3px;
+    padding: 1em;
 
 
+}
+
+:hover.teamup button {
+    background-color:   white ;
+}
 
 
 @media (max-width: 700px) {
@@ -534,17 +561,7 @@
 
     }
 
-    .outcom .dot1,
-    .dot2,
-    .dot3,
-    .dot4,
-    .dot5,
-    .dot6,
-    .dot8,
-    .dot7 {
-        border-bottom: 1px solid black;
-        margin: 2em;
-    }
+
 
     .enginepng {
         width: 9vmin;
@@ -575,7 +592,7 @@
         font-size: .65em;
     }
 
-    .outcom .dot7,
+    .outcom 
     .dot1,
     .dot2,
     .dot3,
